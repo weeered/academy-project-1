@@ -1,0 +1,66 @@
+.fraud_form {
+	width: 30rem;
+	background: url("https://media.tenor.com/29NdP5cqv8wAAAAC/crab-dancing.gif");
+	background-size: 100% 100%;
+	filter: saturate(300%);
+	color: white;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	margin: auto;
+	margin-top: 6rem;
+	padding-bottom: 4rem;
+
+	& p {
+		text-align: center;
+		padding-bottom: 1rem;
+	}
+}
+
+.welcome_text {
+	font-weight: 500;
+	text-align: center;
+}
+
+.fraud_input {
+	text-align: center;
+	display: block;
+	border-radius: 1rem;
+	padding: 1rem;
+	background: url("https://media.tenor.com/29NdP5cqv8wAAAAC/crab-dancing.gif");
+	background-size: 100% 100%;
+	border-style: hidden;
+	width: 100%;
+	color: rgb(220, 255, 255);
+	font-weight: 500;
+	font-size: 0.9rem;
+	margin-bottom: 2rem;
+}
+
+.fraud_input::placeholder {
+	color: rgb(220, 255, 255);
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+
+.button_submit {
+	border: Hidden;
+	border-radius: 1rem;
+
+	background: radial-gradient(
+		circle,
+		white 1%,
+		cyan 20%,
+		#33ff00 50%,
+		red 70%,
+		blue 100%
+	);
+	color: rgb(220, 255, 255);
+
+	width: 100%;
+	height: 2rem;
+	cursor: pointer;
+}
+
+.button_submit:focus {
+	filter: grayscale(100%);
+}

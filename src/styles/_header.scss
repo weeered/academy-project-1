@@ -1,0 +1,106 @@
+.header_top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	height: 6rem;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $gray;
+	z-index: 100;
+	overflow: hidden;
+	& + .logo {
+		justify-content: left;
+	}
+	& .logo {
+		margin-left: 1rem;
+		width: 4rem;
+		cursor: pointer;
+		filter: drop-shadow(0 0 5px $white);
+		transition: 0.1s;
+	}
+
+	& .logo:hover {
+		transform: scale(1.1);
+		filter: drop-shadow(0 0 10px $white) contrast(105%) brightness(105%);
+	}
+
+	& .nav {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		font-size: 1.2rem;
+		word-spacing: 1rem;
+
+		& a {
+			text-decoration: none;
+			color: $white;
+			transition: 0.2s;
+		}
+
+		& a:not(:first-child) {
+			margin-left: 1rem;
+		}
+
+		& a:hover {
+			color: $link-hover;
+		}
+	}
+
+	& .icon_container {
+		margin-top: 1rem;
+		& img {
+			filter: grayscale(100%) brightness(1000%);
+			width: 4rem;
+			cursor: pointer;
+			transition: 0.1s;
+		}
+
+		& img:not(:first-child) {
+			margin-left: 1rem;
+		}
+
+		& img:hover {
+			filter: none !important;
+		}
+	}
+}
+
+.header_bottom {
+	padding: 0.5rem 0;
+	position: fixed;
+	top: 6rem;
+	left: 0;
+	width: 100%;
+	background-color: $link-hover;
+	color: $white;
+	text-align: center;
+	box-shadow: 0px 3px 5px $shadow;
+	z-index: 99;
+
+
+	& .phone_icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 80vh;
+		left: 95%;
+		background-color: $white-darken;
+		width: 5rem;
+		height: 5rem;
+		border-radius: 5rem;
+		cursor: pointer;
+		transition: 0.1s;
+		filter: drop-shadow(0px 3px 5px $shadow);
+		& img {
+			width: 60%;
+		}
+	}
+	& .phone_icon:hover {
+		filter: drop-shadow(0px 3px 9px $shadow);
+		transform: scale(1.1);
+	}
+}

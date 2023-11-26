@@ -1,0 +1,32 @@
+.contacts_bg {
+	margin-top: 4rem;
+  padding: 10rem 0rem;
+	height: auto;
+	width: 69%;
+	position: relative;
+}
+
+.contacts_bg::before {
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 1rem;
+	background-image: url("https://m.media-amazon.com/images/I/71vGBypnI3L.jpg");
+	filter: grayscale(50%);
+	filter: brightness(50%);
+	background-size: 100% 100%;
+}
+
+.overlay_text {
+	padding: 0rem 0;
+	text-align: center;
+	color: $white;
+	filter: brightness(150%);
+}
+
+.overlay_text a {
+	color: $white;
+}

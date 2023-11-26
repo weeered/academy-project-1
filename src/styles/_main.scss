@@ -1,0 +1,146 @@
+.main {
+	margin: 9rem 0 6rem 0;
+}
+
+.section_title {
+	color: $link-hover;
+	text-decoration: line-through;
+	font-weight: 700;
+	letter-spacing: 0.3rem;
+	font-size: 2rem;
+	text-align: center;
+	padding: 2rem 0rem;
+	margin: 0;
+}
+
+.small_title {
+	text-align: center;
+	padding: 2rem 0rem;
+	margin: 0;
+}
+
+.section {
+	margin: 3rem 0;
+}
+
+.container {
+	width: 69%;
+	height: auto;
+	margin: auto;
+}
+
+.about {
+	position: relative;
+
+	text-align: center;
+	padding: 2rem 5rem;
+
+	color: $link-hover;
+
+	& a {
+		color: inherit;
+	}
+
+	& ::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-image: url("https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2022/09/14/Minecraft-Map-2.jpg");
+		background-size: 100% 100%;
+		filter: brightness(30%) grayscale(50%);
+		z-index: -1;
+		border-radius: 1rem;
+	}
+}
+
+.delivery {
+	background-color: $white-darken;
+	border-radius: 1rem;
+	text-align: center;
+	padding: 2rem 5rem;
+
+	& .item {
+		display: inline-block;
+		margin: 1rem 1rem 2rem 1rem;
+	}
+
+	& p {
+		color: $link-hover;
+	}
+
+	.circle {
+		display: flex;
+		margin: auto;
+		width: 10rem;
+		height: 10rem;
+		background-color: $white;
+		border-radius: 5rem;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+
+		& img {
+			width: 60%;
+			height: 60%;
+		}
+	}
+}
+
+.photos {
+	text-align: center;
+	word-spacing: 1rem;
+
+	img {
+		width: 19rem;
+		border-radius: 1rem;
+		margin-top: 1rem;
+		transition: 0.3s;
+	}
+
+	:hover{
+		transform: scale(1.1);
+		filter: drop-shadow(0 0 20px $shadow);
+		cursor: pointer;
+	}
+}
+
+.product_card {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	width: 16rem;
+	height: 20rem;
+	background-color: $white-darken;
+	border-radius: 1rem;
+	text-align: center;
+
+  p{
+    color: $link-hover;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+	.product_title {
+		color: $link-hover;
+    margin: 0;
+	}
+
+	.circle {
+		display: flex;
+		margin: auto;
+		width: 10rem;
+    height: 10rem;
+		background-color: $white;
+		border-radius: 100%;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
